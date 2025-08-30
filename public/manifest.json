@@ -1,0 +1,63 @@
+{
+  "name": "BOOKING_ROOM",
+  "short_name": "BOOKING_ROOM",
+  "description": "Mô tả ứng dụng của bạn tại đây",
+  "start_url": "/?source=pwa",
+  "id": "/",
+  "scope": "/",
+  
+  "theme_color": "#8936FF",
+  "background_color": "#2EC6FE",
+  
+  "icons": [
+    {
+      "src": "icon512_maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon512_maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon512_maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon512_maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon512_maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  
+  "screenshots": [
+    {
+      "src": "icon512_maskable.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "icon512_maskable.png",
+      "sizes": "360x640",
+      "type": "image/png"
+    }
+  ],
+  
+  "orientation": "landscape",
+  "display": "fullscreen",
+  "dir": "auto",
+  "lang": "en-US"
+}
