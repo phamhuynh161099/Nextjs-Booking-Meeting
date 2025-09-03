@@ -12,6 +12,7 @@ import {
   Trash2,
   X,
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface Event {
   id: string;
@@ -115,6 +116,14 @@ const TimelineScreen = () => {
       startTime: "15:00",
       endTime: "16:30",
       date: new Date().toDateString(),
+      color: "bg-green-500/80",
+    },
+    {
+      id: "3",
+      title: "Project Review 02",
+      startTime: "15:00",
+      endTime: "16:30",
+      date: new Date("2025-09-05T14:30:00").toDateString(),
       color: "bg-green-500/80",
     },
   ];
@@ -312,12 +321,12 @@ const TimelineScreen = () => {
             >
               <ChevronLeft className="w-4 h-4" />
             </button>
-            <button
-              className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md"
+            <Button
+              className="px-3 py-2 text-sm rounded-md cursor-pointer shadow-md"
               onClick={goToToday}
             >
               Today
-            </button>
+            </Button>
             <button
               className="p-2 border-2 border-gray-300 rounded-full hover:bg-gray-100"
               onClick={goToNextWeek}

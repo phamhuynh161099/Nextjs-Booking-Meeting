@@ -22,9 +22,9 @@ const AreaDetailComponent = ({}: IRoomDetailComponent) => {
 
   return (
     <>
-      <div className="flex-1">
+      <div className="flex-1 border border-gray-200/50 rounded-md shadow-md mb-2">
         {/* Room Image Carousel */}
-        <div className="relative p-2">
+        <div className="relative p-3">
           <Image
             src={roomImages[currentImageIndex]}
             className="h-64 w-full rounded-md"
@@ -34,7 +34,7 @@ const AreaDetailComponent = ({}: IRoomDetailComponent) => {
           />
 
           {/* Image Indicators */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 transform flex-row space-x-2">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 transform flex flex-row space-x-2">
             {roomImages.map((_, index) => (
               <div
                 key={index}
@@ -53,13 +53,13 @@ const AreaDetailComponent = ({}: IRoomDetailComponent) => {
             <div className="mb-0">
               <p className="mb-2 text-2xl font-bold text-foreground">HSV/GA</p>
               <div className="mb-4 flex-col gap-1 space-x-4">
-                <div className="flex-row items-center">
+                <div className="flex flex-row items-center">
                   <MapPin className="h-4 w-4" color={"#6b7280"} />
                   <p className="text-base font-medium text-gray-600">
                     Factory 1 /1F
                   </p>
                 </div>
-                <div className="flex-row items-center">
+                <div className="flex flex-row items-center">
                   <Table
                     className="h-4 w-4 text-muted-foreground"
                     color={"#6b7280"}
@@ -67,7 +67,7 @@ const AreaDetailComponent = ({}: IRoomDetailComponent) => {
                   <p className="text-base font-medium text-gray-600">
                     Availiable Meeting Room
                   </p>
-                  <p className="ml-2 text-base font-medium text-gray-500">
+                  <p className="flex flex-row items-center ml-2 text-base font-medium text-gray-500">
                     <p className="text-2xl text-green-500">6</p>
                     /6
                   </p>
